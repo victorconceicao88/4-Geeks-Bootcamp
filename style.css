@@ -164,3 +164,97 @@ input[type="submit"]{
     box-shadow: 3px 2px 4px rgba(12,112,242,1); /* This will give a little bit of shaddow in the background 3px (horizontal) 2px (vertically) 4px (blur) 0.25 (transparency*/
     cursor: pointer; 
 }
+
+ /* Last Part Footer*/
+
+ footer{
+    width: 100%;
+    background-color: var(--blue-4geeks);
+  
+ }
+
+ .line1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+footer ul{
+    list-style: none;       /* Wil remove the black Dots*/
+    margin: 0px;
+    padding: 0px;
+
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+footer h5{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: var(--font-main);
+    background-color:var(--black-4geeks);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 15px;
+}
+
+footer ul li{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--font-main);
+    margin: 20px 0px 20px 0px;
+}
+
+footer ul li a {                  /* This will set the colors of the link */
+    color: white;
+    text-decoration: none;
+
+}
+
+footer ul li a:hover{
+    color: var(--grey-hover);
+}
+
+.address{
+    font-weight: 800;
+    font-size: 18px;
+    font-family: var(--font-main);
+    color: white;
+    width: 20%;
+    text-align: center;
+
+}
+
+footer .line2{
+    display: flex;
+    justify-content: center;
+}
+
+footer .line2 a{
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-family: var(--font-main);
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 5px; 
+}
+
+footer .line2 a:first-child{
+    border-right: 3px solid white;
+}
+
+footer .line2 a:hover{
+    color: var(--grey-hover);
+    cursor: pointer;
+}
