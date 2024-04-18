@@ -2,9 +2,19 @@
 /* to import the font to website*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+:root {
+    --blue-4geeks: #0c70f2;         /*This is how to declare Variables in CSS*/     
+    --black-4geeks: #303030;
+    --grey-hover: #c9c9c9;
+    --font-main: "inter";
+}
+
 body{
     margin: 0px;     /* this will remove the orginal border and standart margim from the page*/
     padding: 0px;
+    background: linear-gradient(180deg,rgba(12,112,242,0.5) 19.91%,rgba(12,112,242,0) 24.84%), #303030;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(black 10% ,red 10%, blue 80%);  */
 }
 
 #main{
@@ -19,7 +29,7 @@ body{
 } 
 
     #main div a{            
-        font-family:"Inter";
+        font-family:var(--font-main);
         font-size: 20px;            /* This will change all the links inside */
         font-weight: bold;
         color: white;
@@ -27,7 +37,7 @@ body{
     }
 
     #main div a:hover{    /* this will create an effect when mouse hover on top of link */
-        color: #cccccc;
+        color: var(--grey-hover);
     }
 
 
@@ -39,7 +49,7 @@ body{
     }
 
     #btn{
-        background-color:#0C70F2;
+        background-color:var(--blue-4geeks);
         font-weight: bold;
         font-size: 15px;
         color: white;
@@ -53,3 +63,104 @@ body{
         cursor: pointer;    /* will create the pointer hand when you hover on top of log in*/
     }
 
+    .invert{
+        background-color: black;
+    }
+
+
+/* Next will be the Main section on the Website */
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+    header{
+        color: white;
+        font-family: var(--font-main);
+    }
+
+    header h1 {
+        font-size: 80px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        text-align: center;
+      
+    }
+
+    header h2{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 100px;
+    }
+
+    .invert{
+        background-color: black;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    /* Botton Form */
+
+form{
+    color: white;
+    font-family: var(--font-main);
+    font-size: 30px;
+    font-weight: 600;
+    width: 600px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;     /* this will set the Box under the Name */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input{
+    border-radius: 10px;
+    height: 30px;
+    border: 0;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+label{
+   margin: 10px 0px 10px 0px;
+}
+
+form input::placeholder{                /* this will make changes on the placeholder */
+   color: rgba(57, 57, 57, 0.5);
+}
+
+.checkbox label{
+   font-size: 25px;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.7);          /*this will chage the size of the checkbox making bigger or smaller */
+}
+
+input[type="submit"]{
+    background-color: var(--blue-4geeks);
+    width: 100%;
+    height: 56px;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin: 90px 0px 0px 0px;
+    box-shadow: 3px 2px 4px rgba(12,112,242,1); /* This will give a little bit of shaddow in the background 3px (horizontal) 2px (vertically) 4px (blur) 0.25 (transparency*/
+    cursor: pointer; 
+}
